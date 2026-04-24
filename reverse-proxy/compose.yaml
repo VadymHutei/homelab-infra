@@ -13,6 +13,7 @@ services:
       - ./logs:/var/log/nginx
       - /etc/letsencrypt:/etc/letsencrypt:ro
       - /srv/apps/passgen/static:/var/www/passgen/static:ro
+      - /srv/apps/passgen/public:/var/www/passgen/public:ro
     networks:
       - proxy
 
