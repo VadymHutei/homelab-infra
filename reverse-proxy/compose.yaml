@@ -12,6 +12,7 @@ services:
       - ./html:/usr/share/nginx/html:ro
       - ./logs:/var/log/nginx
       - /etc/letsencrypt:/etc/letsencrypt:ro
+      - /srv/apps/passgen/static:/var/www/passgen/static:ro
     networks:
       - proxy
 
